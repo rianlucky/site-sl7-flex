@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SL7 Flex | Envios Flex e Entregas no Mesmo Dia em São Paulo</title>
+  <meta name="description" content="SL7 Flex: coleta na sua base e entrega no mesmo dia em São Paulo e Grande SP. Mercado Livre Flex, Shopee Entrega Direta, Magalu e e-commerces próprios.">
+  <link rel="icon" href="img/logo-sl7-circle.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,400;0,600;0,800;1,700;1,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/4.7.1/maplibre-gl.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="#inicio" class="header__logo js-top" aria-label="SL7 Flex - voltar ao início">
+      <img src="img/logo-sl7.png" alt="SL7 Flex">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#vantagens">Vantagens</a>
+      <a href="#cobertura">Cobertura</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#contato" class="btn btn--sm btn--grad">Quero contratar</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="metadata"
+         poster="video/hero-sp-poster.jpg" aria-hidden="true"
+         data-src="video/hero-sp.mp4" data-src-mobile="video/hero-sp-mobile.mp4"></video>
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div class="hero__text">
+      <span class="tag">Entregas no mesmo dia · São Paulo e Grande SP</span>
+      <h1>Seu cliente compra hoje.<br><span class="grad-text">Recebe ainda hoje.</span></h1>
+      <p class="lead">A SL7 Flex coleta os pedidos na sua base e entrega no mesmo dia, com rastreio e foto de comprovação. Atendemos Mercado Livre Flex, Shopee Entrega Direta, Magalu e e-commerces próprios.</p>
+      <div class="hero__ctas">
+        <a href="#contato" class="btn btn--grad">Solicitar coleta</a>
+        <a href="#" class="btn btn--whats js-whats"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.3-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 2.1.9 3 1 4 .8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5l-.6-.3z"/></svg>Falar no WhatsApp</a>
+      </div>
+      <ul class="hero__chips">
+        <li><strong>Coleta</strong> até <span data-cfg="coletaAte">14h</span></li>
+        <li><strong>Entrega</strong> até <span data-cfg="entregaAte">21h</span></li>
+        <li><strong>Suporte</strong> no WhatsApp</li>
+      </ul>
+    </div>
+    <div class="hero__visual">
+      <div class="ring" aria-hidden="true"></div>
+      <img src="img/logo-sl7-circle.jpg" alt="" class="hero__logo">
+    </div>
+  </div>
+</section>
+
+<!-- ============ NÚMEROS ============ -->
+<section class="stats">
+  <div class="container stats__grid">
+    <!-- AJUSTAR: números reais da operação -->
+    <div class="stat"><span class="stat__num" data-count="98">0</span><span class="stat__suf">%</span><p>de SLA nas entregas no mesmo dia</p></div>
+    <div class="stat"><span class="stat__pre">+</span><span class="stat__num" data-count="50000">0</span><p>entregas realizadas</p></div>
+    <div class="stat"><span class="stat__pre">+</span><span class="stat__num" data-count="80">0</span><p>sellers atendidos</p></div>
+    <div class="stat"><span class="stat__num" data-count="100">0</span><span class="stat__suf">%</span><p>da Região Flex de SP</p></div>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS ============ -->
+<section class="section" id="servicos">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">O que entregamos</span>
+      <h2>Uma operação para todos os seus canais</h2>
+      <p>Você vende em vários lugares. A gente cuida da última milha de todos eles, com o mesmo padrão.</p>
+    </div>
+    <div class="cards">
+      <article class="card card--featured">
+        <span class="card__badge">Mais procurado</span>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+        </div>
+        <h3>Mercado Livre Flex</h3>
+        <p>Coleta na sua base e entrega no mesmo dia para manter sua reputação em verde e o selo Flex ativo.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        </div>
+        <h3>Shopee Entrega Direta</h3>
+        <p>Cobertura do mapa Shopee em São Paulo, com coleta diária e acompanhamento de cada pacote.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+        </div>
+        <h3>Magalu Entregas</h3>
+        <p>Entrega rápida para quem vende no ecossistema Magalu e precisa cumprir prazos curtos.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>E-commerce próprio</h3>
+        <p>Venda pelo seu site e ofereça entrega no mesmo dia como diferencial competitivo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMO FUNCIONA ============ -->
+<section class="section section--alt" id="como-funciona">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Do pedido à porta do cliente em 4 passos</h2>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="step__n">01</span>
+        <h3>Cadastro</h3>
+        <p>Preencha o formulário. Nosso time retorna pelo WhatsApp e alinha volumes e horários.</p>
+      </li>
+      <li class="step">
+        <span class="step__n">02</span>
+        <h3>Coleta na base</h3>
+        <p>Passamos na sua empresa todos os dias até as <span data-cfg="coletaAte">14h</span> para retirar os pacotes.</p>
+      </li>
+      <li class="step">
+        <span class="step__n">03</span>
+        <h3>Rota otimizada</h3>
+        <p>Os pacotes saem em rota com motoboys treinados e rastreio em tempo real.</p>
+      </li>
+      <li class="step">
+        <span class="step__n">04</span>
+        <h3>Entregue hoje</h3>
+        <p>Entrega até as <span data-cfg="entregaAte">21h</span>, com foto e comprovante digital de cada pacote.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ VANTAGENS ============ -->
+<section class="section" id="vantagens">
+  <div class="container split">
+    <div class="split__text">
+      <span class="eyebrow">Por que a SL7 Flex</span>
+      <h2>Velocidade com controle de ponta a ponta</h2>
+      <p>Entrega rápida não adianta se você não sabe onde o pacote está. Cada etapa fica registrada, e você fala com gente de verdade quando precisa.</p>
+      <a href="#contato" class="btn btn--grad">Começar agora</a>
+    </div>
+    <ul class="features">
+      <li class="feature">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <div><h3>Rastreio em tempo real</h3><p>Acompanhe cada pacote do momento da coleta até a entrega.</p></div>
+      </li>
+      <li class="feature">
+        <svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l2-2h4l2 2"/></svg>
+        <div><h3>Foto e comprovante</h3><p>Prova de entrega digital, pronta para resolver qualquer contestação.</p></div>
+      </li>
+      <li class="feature">
+        <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+        <div><h3>Pacotes protegidos</h3><p>Cuidado no manuseio e cobertura contra extravio e avarias.</p></div>
+      </li>
+      <li class="feature">
+        <svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-5A8 8 0 1 1 21 12z"/></svg>
+        <div><h3>Suporte humano</h3><p>Atendimento direto pelo WhatsApp, sem robô e sem fila.</p></div>
+      </li>
+      <li class="feature">
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        <div><h3>Pagamento quinzenal</h3><p>Condições justas para o seu fluxo de caixa respirar.</p></div>
+      </li>
+      <li class="feature">
+        <svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>
+        <div><h3>Pronto para escalar</h3><p>Do primeiro pacote aos picos de Black Friday, sem perder qualidade.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ COBERTURA ============ -->
+<section class="section section--alt" id="cobertura">
+  <div class="container coverage">
+    <div class="split__text">
+      <span class="eyebrow">Cobertura</span>
+      <h2>100% da Região Flex de São Paulo</h2>
+      <p>Capital, ABC, Guarulhos e região oeste. Clique numa cidade para ver no mapa. Não achou a sua? Fale com a gente: estamos sempre ampliando rotas.</p>
+      <!-- Cidades vêm de CONFIG.cidades em js/main.js -->
+      <ul class="cities" id="cityList"></ul>
+      <a href="#" class="btn btn--ghost js-whats">Consultar minha região</a>
+    </div>
+    <div class="map" id="map" role="region" aria-label="Mapa das cidades atendidas"></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="duvidas">
+  <div class="container container--narrow">
+    <div class="section__head">
+      <span class="eyebrow">Dúvidas</span>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Qual o volume mínimo para contratar?</summary>
+        <p>Atendemos desde sellers em crescimento até operações grandes. Fale com a gente e montamos a coleta de acordo com o seu volume.</p>
+      </details>
+      <details>
+        <summary>Até que horas vocês coletam?</summary>
+        <p>A coleta acontece todos os dias até as <span data-cfg="coletaAte">14h</span>, e as entregas são feitas no mesmo dia até as <span data-cfg="entregaAte">21h</span>.</p>
+      </details>
+      <details>
+        <summary>Como acompanho as minhas entregas?</summary>
+        <p>Cada pacote tem rastreio e, ao ser entregue, recebe foto e comprovante digital. Você também pode falar com o suporte pelo WhatsApp a qualquer momento.</p>
+      </details>
+      <details>
+        <summary>E se um pacote for extraviado ou danificado?</summary>
+        <p>Os pacotes têm cobertura contra extravio e avarias. Nosso time abre a ocorrência e resolve com você.</p>
+      </details>
+      <details>
+        <summary>Como funciona o pagamento?</summary>
+        <p>O fechamento é quinzenal, com relatório detalhado de todas as entregas do período.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO / CADASTRO ============ -->
+<section class="section section--cta" id="contato">
+  <div class="container split">
+    <div class="split__text">
+      <span class="eyebrow">Fale com a gente</span>
+      <h2>Pronto para entregar <span class="grad-text">ainda hoje?</span></h2>
+      <p>Preencha o cadastro e nosso time retorna pelo WhatsApp para alinhar sua operação.</p>
+      <ul class="contact-list">
+        <li><span>WhatsApp</span><a href="#" class="js-whats" data-cfg="telefone">(11) 90000-0000</a></li>
+        <li><span>E-mail</span><a href="#" class="js-mail" data-cfg="email">contato@sl7flex.com.br</a></li>
+        <li><span>Instagram</span><a href="#" class="js-insta" data-cfg="instagramLabel">@sl7flex</a></li>
+        <li><span>Atendimento</span><em data-cfg="horario">Segunda a sábado, 08h às 20h</em></li>
+      </ul>
+    </div>
+    <form class="form" id="leadForm" novalidate>
+      <div class="form__row">
+        <label>Nome do responsável<input name="nome" required autocomplete="name"></label>
+        <label>Nome da empresa<input name="empresa" required autocomplete="organization"></label>
+      </div>
+      <div class="form__row">
+        <label>WhatsApp<input name="whatsapp" type="tel" required autocomplete="tel" placeholder="(11) 90000-0000"></label>
+        <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+      </div>
+      <div class="form__row">
+        <label>Onde você vende?
+          <select name="canal">
+            <option>Mercado Livre Flex</option>
+            <option>Shopee Entrega Direta</option>
+            <option>Magalu</option>
+            <option>E-commerce próprio</option>
+            <option>Vários canais</option>
+          </select>
+        </label>
+        <label>Pacotes por dia
+          <select name="volume">
+            <option>Até 20</option>
+            <option>20 a 50</option>
+            <option>50 a 150</option>
+            <option>Mais de 150</option>
+          </select>
+        </label>
+      </div>
+      <label>Endereço de coleta (bairro / cidade)<input name="endereco"></label>
+      <button type="submit" class="btn btn--grad btn--block">Enviar cadastro pelo WhatsApp</button>
+      <p class="form__note" id="formNote">Ao enviar, abrimos o WhatsApp com seus dados preenchidos.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <a href="#inicio" class="js-top" aria-label="Voltar ao início"><img src="img/logo-sl7.png" alt="SL7 Flex" class="footer__logo"></a>
+      <p>Você vende, a gente entrega no mesmo dia.</p>
+      <div class="social">
+        <a href="#" class="js-whats" aria-label="WhatsApp">
+          <svg viewBox="0 0 32 32"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.3-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 2.1.9 3 1 4 .8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5l-.6-.3z"/></svg>
+        </a>
+        <a href="#" class="js-mail" aria-label="E-mail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+        <a href="#" class="js-insta" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+    <nav class="footer__nav">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#cobertura">Cobertura</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+  <div class="container footer__bottom">
+    <span>© <span id="year"></span> SL7 Flex. Todos os direitos reservados.</span>
+    <span data-cfg="cnpj"></span>
+  </div>
+</footer>
+
+<a href="#" class="whats-float js-whats" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.3-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 2.1.9 3 1 4 .8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5l-.6-.3z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/4.7.1/maplibre-gl.min.js"></script>
+<script src="js/cidades-geo.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
